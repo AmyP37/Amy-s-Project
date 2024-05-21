@@ -23,13 +23,33 @@ header p {
     margin: 0;
 }
 
-section {
-    padding: 20px;
-    margin: 20px auto;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
     max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 section h2 {
@@ -38,16 +58,12 @@ section h2 {
     padding-bottom: 10px;
 }
 
-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-section ul li {
-    background: url('https://via.placeholder.com/10') no-repeat left center;
-    background-size: 10px 10px;
-    padding-left: 20px;
-    margin-bottom: 10px;
+.portfolio-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 footer {
@@ -55,22 +71,29 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
     width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-a {
-    color: #333;
-    text-decoration: none;
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-a:hover {
-    color: #007BFF;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+form button:hover {
+    background-color: #555;
 }
